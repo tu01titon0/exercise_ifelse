@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    Nhap a: <input type="mumber" name="a" id="a" placeholder="Doanh thu">
+    Nhap b: <input type="mumber" min=0 max=100 name="b" id="b" placeholder="Hoa hong">%
+    <input type="submit" name="submit" onclick="checkResult()">
+</body>
+<script>
+    function checkResult(){
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        result = a * (b/100)
+        if (a && b) {
+            alert(`hoa hong = ${result}`)
+        } else {
+            alert('vui long nhap dung')
+        }
+    }
+</script>
+</htmL> 

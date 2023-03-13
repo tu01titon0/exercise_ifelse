@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    Nhap a: <input type="mumber" name="a" id="a" placeholder="nhap số a">
+    Nhap b: <input type="mumber" name="b" id="b" placeholder="nhap số b">
+    Nhap c: <input type="mumber" name="c" id="c" placeholder="nhap số c">
+
+    <input type="submit" name="submit" onclick="checkResult()">
+</body>
+<script>
+    function checkResult(){
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+        max = a
+        let array = [a, b, c]
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] > max )  {
+                max = array[i]
+            }          
+        }
+        alert(`so lon nhat la ${max}`)
+    }
+</script>
+</htmL> 

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    Nhap a: <input type="mumber" name="a" id="a" placeholder="nhap số a">
+    <input type="submit" name="submit" onclick="checkResult()">
+</body>
+<script>
+    function checkResult(){
+        let a = +document.getElementById('a').value;
+        if (a >= 0) {
+            alert('a lon hon hoac bang 0')
+        } else {
+            alert('a be hon 0')
+        }  
+    }
+</script>
+</htmL> 
