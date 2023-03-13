@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    Nhap chieu dai: <input type="mumber" name="a" id="a" placeholder="nhap a">
+    Nhap chieu rong: <input type="mumber" name="b" id="b" placeholder="nhap b">
+    <input type="submit" name="submit" onclick="checkResult()">
+</body>
+<script>
+    function checkResult(){
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        result =  a * b;
+        if (a && b) {
+            alert(`${result}cm là diện tích hình chữ nhật`)
+        } else {
+            alert('vui long nhap dung')
+        }  
+    }
+</script>
+</htmL> 

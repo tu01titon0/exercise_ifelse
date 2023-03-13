@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <h2> Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.</h2>
+    Nhap tuoi: <input type="mumber" min=0 name="a" id="a" placeholder="nhap a">
+    <input type="submit" name="submit" onclick="checkResult()">
+</body>
+<script>
+    function checkResult(){
+        let a = +document.getElementById('a').value;
+        
+        if (a > 0 && a < 100) {
+            
+            alert(`day la tuoi cua 1 nguoi`)
+        } else {
+            alert(`day khong phau tuoi cua 1 nguoi` )
+        }  
+    }
+</script>
+</htmL> 

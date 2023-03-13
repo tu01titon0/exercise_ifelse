@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+</head>
+<body>
+    <br>
+    Số tien: <input type="number" min="0" id="initial-amount" placeholder="Nhập số tien"> 
+    lai suat: <input type="number" min="0" id="interest-rate" placeholder="lai suat"> 
+    so thang: <input type="number" min="0" id="number-of-months" placeholder="so thang"> 
+    <button type="submit" id="submit_result" onclick="calculateInterest()"> submit </button>
+    <br>
+    tong so tien<p id="total-amount"></p>
+    lai suat<p id="interest-earned"></p>
+</body>
+<script>
+    function calculateInterest() {
+        var initialAmount = +document.getElementById("initial-amount").value;
+        var numberOfMonths = +document.getElementById("number-of-months").value;
+        var interestRate = +document.getElementById("interest-rate").value;
+        var totalAmount = initialAmount * Math.pow((1 + interestRate/100), numberOfMonths);
+        var interestEarned = totalAmount - initialAmount;
+
+        document.getElementById("total-amount").innerHTML = totalAmount.toFixed(2);
+        document.getElementById("interest-earned").innerHTML = interestEarned.toFixed(2);
+    }
+</script>
+</htmL> 

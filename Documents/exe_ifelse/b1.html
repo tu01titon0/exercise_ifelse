@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    Nhap do C: <input type="mumber" name="a" id="a" placeholder="nhap do c">
+    <input type="submit" name="submit" onclick="checkResult()">
+</body>
+<script>
+    function checkResult(){
+        let a = +document.getElementById('a').value;
+        result =  a * 9 / 5 + 32
+        if (a) {
+            alert(`${result} la do f `)
+        } else {
+            alert('vui long nhap dung')
+        }  
+    }
+</script>
+</htmL> 

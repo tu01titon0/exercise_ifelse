@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    Nhap canh hinh vuong: <input type="mumber" name="a" id="a" placeholder="nhap do dai canh">
+    <input type="submit" name="submit" onclick="checkResult()">
+</body>
+<script>
+    function checkResult(){
+        let a = +document.getElementById('a').value;
+        result =  a * 4
+        if (a) {
+            alert(`hinh cuong có cạnh ${a} có diện tích = ${result}`)
+        } else {
+            alert('vui long nhap dung')
+        }  
+    }
+</script>
+</htmL> 
