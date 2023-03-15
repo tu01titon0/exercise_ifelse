@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reverse array</title>
+  </head>
+  <body>
+    <h1>Reverst Array </h1>
+    <input type="text" id="input">  
+    <button onclick="showValue()"> Display </button>
+    <div id="showResult"></div>
+  </body>
+  <script>
+    let array = Array();
+
+    function showValue() {
+        let inputArray = document.getElementById('input').value.split(",");
+        for (let i = inputArray.length - 1; i >= 0; i--) {
+            array.push(inputArray[i]);
+        }
+        document.getElementById('showResult').innerHTML = array
+    }
+  </script>
+</html>
