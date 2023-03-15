@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+</head>
+<body>
+    <button id="check_result" onclick="checkResult()">Tính tổng </button>
+<script>
+    function checkResult() {
+        let x = 0
+        let count = 0;
+        let sum = 0; 
+
+        for (let i = 1; count < 30; i++) {
+            if (i % 7 === 0) { 
+                count++;
+                sum += i; 
+            }
+        }
+        alert(sum)
+    }
+
+</script>
+</htmL> 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Số nguyên tố</title>
+	<script>
+		function isPrime(n) {
+			if (n <= 1) {
+				return false;
+			}
+			for (var i = 2; i <= Math.sqrt(n); i++) {
+				if (n % i === 0) {
+					return false;
+				}
+			}
+			return true;
+		}
+
+		function printPrimes(n) {
+			var result = "";
+			for (var i = 2; i <= n; i++) {
+				if (isPrime(i)) {
+					result += i + " ";
+				}
+			}
+			document.getElementById("result").innerHTML = result;
+		}
+	</script>
+</head>
+<body>
+	<h1>Tìm số nguyên tố</h1>
+	<p>Nhập một số nguyên dương n: <input type="number" id="number" min="1"></p>
+	<button onclick="printPrimes(parseInt(document.getElementById('number').value))">Tìm số nguyên tố</button>
+	<p id="result"></p>
+</body>
+</html>

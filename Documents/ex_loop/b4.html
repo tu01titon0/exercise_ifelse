@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+</head>
+<body>
+    <button id="check_result" onclick="fibonacci()"> Hiển thị ra 20 số trong dãy fibonacci đầu tiên.</button>
+</body>
+<script>
+    function fibonacci() {
+        let num1 = 0;
+        let num2 = 1;
+        let fib = [num1, num2];
+        for (let i = 2; i < 20; i++) {
+            let nextNum = num1 + num2;
+            fib.push(nextNum);
+            num1 = num2;
+            num2 = nextNum;
+        }
+        alert(fib);
+    }
+
+</script>
+</htmL> 

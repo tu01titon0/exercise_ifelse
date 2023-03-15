@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sample array</title>
+  </head>
+  <body>
+    <h1> Sample Screen: </h1>
+    <input type="text" id="input">  
+    <button onclick="addValue()"> Add </button>
+    <button onclick="showValue()"> Display </button>
+    <hr>
+    <div id="showResult"></div>
+  </body>
+  <script>
+    let array = Array();
+    let str = ''
+    function addValue() {
+      let input = document.getElementById("input").value;
+      array.push(input);
+      document.getElementById("input").value = ''
+        }
+    function showValue() {
+        for (let i = 0; i < array.length; i++) {
+            let element = array[i];
+            str = str + "Element " + i + " = " + array[i] + "<br/>";
+        }
+        document.getElementById('showResult').innerHTML= str
+    }
+  </script>
+</html>

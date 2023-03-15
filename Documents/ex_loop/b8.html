@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+</head>
+<body>
+    <button id="check_result" onclick="checkResult()">bat dau</button>
+<script>
+    function checkResult() {
+        number = prompt('Số bạn muốn đoán trong khoảng lớn nhất là bao nhiêu?')
+        comNumber = Math.floor(Math.random() * number);
+        if (number === comNumber){
+            alert('yout win')
+        } else if (number < comNumber){
+            alert('số b đoán bé hơn')
+        } else {
+            alert('số bạn đoán lớn hơn')
+        }
+    }
+
+</script>
+</htmL> 
