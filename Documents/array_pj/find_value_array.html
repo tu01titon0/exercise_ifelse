@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find value array</title>
+    </head>
+    <body>
+        <h1>Find value array</h1>
+    </body>
+    <script>
+    let array_random =  Array.from({length: 40}, () => Math.floor(Math.random() * 40));
+    let input = prompt('Kiểm tra xem số này có trong array không')
+    
+    if (checkArray(array_random, input)) {
+        alert('you win')
+    } else {
+        alert('You lose')
+    }
+    function checkArray(){
+        for (let i = 0; i < array_random.length; i++) {
+            if (array_random[i] == input){
+                return true
+                break
+            }
+        }
+    }
+  </script>
+</html>

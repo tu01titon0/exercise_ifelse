@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find value max array</title>
+    </head>
+    <body>
+        <h1>Find value max  array</h1>
+    </body>
+    <script>
+    let input_arr = prompt('Nhap mang').split(',');
+    alert('so lon nhat mang nay la ' + checkArray(input_arr));
+    function checkArray(input_arr){
+        let max = input_arr[0];
+        for (let i = 1; i < input_arr.length; i++) {
+            if (input_arr[i] > max){
+                max = input_arr[i];
+            }
+        }
+        return max;
+    }
+  </script>
+</html>
